@@ -1,0 +1,12 @@
+name: TWControl
+version: "1.0"
+author: socialclubz.com
+api: ["1.0.0"]
+main: me.socialclubz.com.twcontol
+commands:
+  day:
+    description: Sets the Time <Day>
+    permission: social.day
+  night:
+    description: Sets the Time <Night>
+    permission: social.night

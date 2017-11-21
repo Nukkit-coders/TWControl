@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="twcontrol:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/twcontrol_jar</output-path>
+    <root id="root">
+      <element id="archive" name="twcontrol.jar">
+        <element id="module-output" name="twcontrol" />
+      </element>
+    </root>
+  </artifact>
+</component>

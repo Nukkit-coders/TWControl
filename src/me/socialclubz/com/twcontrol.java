@@ -62,21 +62,20 @@ public class twcontrol
                 sender.sendMessage("You have to be a Player");
                 return true;
             }
-            if (player.hasPermission("social.day");
-            switch ((TIME_DAY)) {
-            }
-
-            if (command.getName().equalsIgnoreCase("night")) {
-                if (player == null) {
-                    sender.sendMessage("You have to be a Player");
-                    return true;
+            if (player.hasPermission("social.day"));
+                switch ((TIME_DAY)) {
                 }
-                if ((player != null) && (player.hasPermission("social.night"))) {
-                    switch ((TIME_NIGHT)) {
-                    }
-                }
-            }
         }
+
+        if (command.getName().equalsIgnoreCase("night")) {
+            if (player == null) {
+                sender.sendMessage("You have to be a Player");
+                return true;
+                }
+            if (player.hasPermission("social.night"))
+                switch ((TIME_NIGHT)) {
+                }
+            }
         return false;
     }
 }

@@ -10,3 +10,9 @@ commands:
   night:
     description: Sets the Time <Night>
     permission: social.night
+  sun:
+    description: Sets the weather <Sun>
+    permission: social.sun
+  rain:
+    description: Sets the weather <rain>
+    permission: social.rain

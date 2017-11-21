@@ -45,6 +45,7 @@ public class twcontrol
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+//Day
         Player player = null;
         if ((sender instanceof Player)) {
             player = (Player) sender;
@@ -57,10 +58,12 @@ public class twcontrol
             if (player != null) {
                 if (player.hasPermission("social.day")) {
                     player.getLevel().setTime(TIME_DAY);
+                    sender.sendMessage("Time Set To Day");
                 }
                 return true;
             }
         }
+//night
         if (cmd.getName().equalsIgnoreCase("night")) {
             if (player == null) {
                 sender.sendMessage("You have to be a Player");
@@ -68,6 +71,31 @@ public class twcontrol
             }
             if (player != null) if (player.hasPermission("social.night")) {
                 player.getLevel().setTime(TIME_NIGHT);
+                sender.sendMessage("Time Set To Night");
+                return true;
+            }
+        }
+//sun
+        if (cmd.getName().equalsIgnoreCase("sun")) {
+            if (player == null) {
+                sender.sendMessage("You have to be a Player");
+                return true;
+            }
+            if (player != null) if (player.hasPermission("social.sun")) {
+                player.getLevel().setRainTime(0);
+                sender.sendMessage("Its Sunny Now");
+                return true;
+            }
+        }
+        //sun
+        if (cmd.getName().equalsIgnoreCase("rain")) {
+            if (player == null) {
+                sender.sendMessage("You have to be a Player");
+                return true;
+            }
+            if (player != null) if (player.hasPermission("social.rain")) {
+                player.getLevel().setRainTime(100);
+                sender.sendMessage("Storm Mode Now Active");
                 return true;
             }
         }

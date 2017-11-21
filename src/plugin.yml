@@ -16,3 +16,9 @@ commands:
   rain:
     description: Sets the weather <rain>
     permission: social.rain
+  stoptime:
+    description: Stop the time
+    permission: social.stoptime
+  starttime:
+    description: Start the time
+    permission: social.startime

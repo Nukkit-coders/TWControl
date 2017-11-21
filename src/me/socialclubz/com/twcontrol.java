@@ -87,7 +87,7 @@ public class twcontrol
                 return true;
             }
         }
-        //sun
+//sun
         if (cmd.getName().equalsIgnoreCase("rain")) {
             if (player == null) {
                 sender.sendMessage("You have to be a Player");
@@ -96,6 +96,30 @@ public class twcontrol
             if (player != null) if (player.hasPermission("social.rain")) {
                 player.getLevel().setRainTime(100);
                 sender.sendMessage("Storm Mode Now Active");
+                return true;
+            }
+        }
+//stoptime
+        if (cmd.getName().equalsIgnoreCase("stoptime")) {
+            if (player == null) {
+                sender.sendMessage("You have to be a Player");
+                return true;
+            }
+            if (player != null) if (player.hasPermission("social.stoptime")) {
+                player.getLevel().stopTime();
+                sender.sendMessage("You Locked The Time");
+                return true;
+            }
+        }
+//starttime
+        if (cmd.getName().equalsIgnoreCase("starttime")) {
+            if (player == null) {
+                sender.sendMessage("You have to be a Player");
+                return true;
+            }
+            if (player != null) if (player.hasPermission("social.starttime")) {
+                player.getLevel().startTime();
+                sender.sendMessage("You Locked The Time");
                 return true;
             }
         }

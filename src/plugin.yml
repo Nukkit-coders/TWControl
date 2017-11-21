@@ -2,7 +2,7 @@ name: TWControl
 version: "1.0"
 author: socialclubz.com
 api: ["1.0.0"]
-main: me.socialclubz.com.twcontol
+main: me.socialclubz.com.twcontrol
 commands:
   day:
     description: Sets the Time <Day>

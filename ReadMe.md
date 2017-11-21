@@ -1,4 +1,5 @@
-#TWControl (Broken)
+#TWControl
+Credit: CreeperFace and myself
 
 Coded for Nukkkit.
 

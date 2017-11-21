@@ -14,26 +14,31 @@ import static cn.nukkit.level.Level.TIME_DAY;
 import static cn.nukkit.level.Level.TIME_NIGHT;
 
 
-public class twcontrol extends PluginBase implements Listener {
-    public void onEnable() {
+public class twcontrol
+        extends PluginBase
+        implements Listener
+{
+    public void onEnable()
+    {
         getServer().getPluginManager().registerEvents(this, this);
         getDataFolder().mkdir();
 
-        Config config = new Config(new File(getDataFolder(), "config.yml"), 2, new LinkedHashMap() {
-        });
+        Config config = new Config(new File(
+                getDataFolder(), "config.yml"), 2, new LinkedHashMap() {});
         config.save();
         getServer().getLogger().info("-----------------------");
         getServer().getLogger().info("|      Enabled!       |");
-        getServer().getLogger().info("|   Social-ClearChat  |");
+        getServer().getLogger().info("|      TWControl      |");
         getServer().getLogger().info("|         by          |");
         getServer().getLogger().info("|     SocialClubz     |");
         getServer().getLogger().info("-----------------------");
     }
 
-    public void onDisable() {
+    public void onDisable()
+    {
         getServer().getLogger().info("-----------------------");
         getServer().getLogger().info("|      Disabled!      |");
-        getServer().getLogger().info("|   Social-ClearChat  |");
+        getServer().getLogger().info("|      TWControl      |");
         getServer().getLogger().info("|         by          |");
         getServer().getLogger().info("|     SocialClubz     |");
         getServer().getLogger().info("-----------------------");

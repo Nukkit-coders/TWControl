@@ -1,5 +1,5 @@
 name: TWControl
-version: "1.0"
+version: "1.0.0"
 author: socialclubz.com
 api: ["1.0.0"]
 main: me.socialclubz.com.twcontrol
